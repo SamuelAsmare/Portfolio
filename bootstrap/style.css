@@ -1,0 +1,604 @@
+body{
+     background:conic-gradient( from -30deg, #0a0a0a,#eaf0f0,rgb(44, 92, 99) ,rgb(7, 8, 8),hwb(180 9% 91%), rgb(229, 120, 12), rgb(11, 10, 11),rgb(12, 12, 12)); 
+    background-repeat: no-repeat;
+     overflow-x: hidden; 
+     background-attachment:fixed;
+     font-family:'Times New Roman', Times, serif;
+}
+/* Preloader styles */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #faf5f5;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Loader animation */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide content initially */
+.hidden {
+    display: none;
+}
+
+#navigator{
+   
+      position: fixed; 
+    top: 0px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    z-index: 1000;
+    background-color: hsl(120, 3%, 6%);
+}
+
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: center; /* Centers nav items */
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-color: white; /* Make sure it's visible */
+}
+
+#home{
+    font-size:20px;
+    width:70px;
+    text-align:center;
+     border-radius:10px;
+     transition:all 0.2s ease;
+     height:35px;
+      margin:20px;
+     padding:0px;
+}
+#home:hover{
+    color:black;
+    background-color: rgb(50, 227, 74);
+}
+
+
+
+#aboutme{
+    font-size:20px;
+     border-radius:10px;
+      width:100px;
+    text-align:center;
+     transition:all 0.2s ease;
+     height:35px;
+      margin:20px;
+      padding:0px;
+}
+#aboutme:hover{
+    color:black;
+    background-color: rgb(195, 218, 20);
+}
+#services{
+    font-size:20px;
+     border-radius:10px;
+      width:80px;
+    text-align:center;
+     transition:all 0.2s ease;
+     height:35px;
+     margin:20px;
+      padding:0px;
+}
+#services:hover{
+    color:black;
+    background-color: rgb(239, 6, 2);
+}
+#skills{
+    font-size:20px;
+     border-radius:10px;
+      width:70px;
+    text-align:center;
+     transition:0.1s ease;
+     height:35px;
+     margin:20px;
+      padding:0px;
+}
+#skills:hover{
+    color:black;
+    background-color: rgb(38, 207, 72);
+}
+#projects{
+    font-size:20px;
+     border-radius:10px;
+      width:90px;
+    text-align:center;
+     transition:all 0.2s ease;
+     height:35px;
+     margin:20px;
+      padding:0px;
+}
+#projects:hover{
+    color:black;
+    background-color: rgb(233, 237, 4);
+}
+#conta{
+    border-radius:10px;
+    border: none;
+    width:90%;
+    backdrop-filter:blur(100px);
+}
+#contact{
+    font-size:20px;
+     border-radius:10px;
+      width:70px;
+    text-align:center;
+     transition:all 0.2s ease;
+     height:35px;
+     margin:20px;
+      padding:0px;
+}
+#contact:hover{
+    color:black;
+    background-color: rgb(246, 38, 27);
+}
+
+
+
+
+
+
+#welcome{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow:rgb(38, 255, 0) 1px 2px 3px ;
+    animation:welcome-animation 1s infinite alternate;
+    
+}
+.sam{
+width: 10%;
+height:auto;
+top:0px;
+left:0px;
+}
+#mypic{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-radius: 10%;
+    transition:all 2s ease;
+    box-shadow:yellow 2px 3px 20px 2px;
+    animation: mypicanimation 3s infinite alternate;
+}
+#downloadcv1{
+    color:white;
+    padding:50px;
+    border-radius:20px;
+    margin-top:200px;
+    background-image:url('picture.avif');
+    
+}
+#downloadcv2{
+    color:white;
+    background-color:rgb(221, 221, 25) ;
+    border-radius:10px;
+    animation:downloader 3s infinite alternate;
+}
+
+@keyframes downloader{
+    from{
+       background-color:rgb(235, 197, 9);        
+        transform: scale(0.9);
+    }
+    to{
+        background-color:rgb(67, 231, 7);
+        transform: scale(1.1);
+    }
+
+}
+
+@keyframes mypicanimation{
+   0% {
+            box-shadow: green 2px 3px 0px 2px;
+    }
+    25%{
+       
+            box-shadow:yellow 2px 3px 40px 2px;
+    }
+    50%{
+       
+            box-shadow:red 2px 3px 40px 2px;
+    }
+    75%{
+       
+            box-shadow:green 2px 3px 40px 2px;
+    }
+    100%{
+       
+            box-shadow:blue 2px 3px 40px 2px;
+    }
+}
+
+
+
+
+
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.1em solid #333; /* Cursor effect */
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.15em;
+    animation: typing 10s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    0% { width: 0; }
+    25% { width: 100%; }
+    50% { width: 100%; }
+    75% { width: 0; }
+    100% { width: 0; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #333; }
+  }
+
+@media (min-width:1025px){
+.ski{
+    width: 150px;
+    margin:50px;
+    height: 150px;
+    
+    margin: 10px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.pro{
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border-radius: 10%;
+}
+.problems{
+ width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10%;
+    background-color:white;
+}
+#animate-paragraph{
+      font-size: 22px;
+      font-weight: bold;
+      display: inline-block;
+     animation: sami  2s linear ;
+       animation-timeline:view();
+         animation-range:entry 0%;
+    }
+     #about{
+        backdrop-filter:blur(200px);
+        margin-top:250px;
+        padding:20px;
+        border-radius:20px;
+         background-image:url('abtme.jpeg');
+         background-repeat:no-repeat;
+         background-size:cover;
+        animation: sami  2s linear;
+       animation-timeline:view();
+         animation-range:entry 0%;
+    }
+    #servicelist{
+    font-size:24px;
+    color:white;
+    backdrop-filter:blur(100px);
+    background-color:transparent;
+    padding:40px;
+    border-radius:20px;
+     box-shadow:rgb(116, 113, 117) 5px 2px 10px 0px;
+    animation: sam  2s linear;
+    animation-timeline:view();
+     animation-range: entry 0%;
+}
+#conta{
+    border-radius:10px;
+    border: none;
+    width:90%;
+    backdrop-filter:blur(100px);
+}
+}
+/* @media (min-width:768px) and (max-width:1025px){
+.ski{
+    width: 120px;
+    margin:20px;
+    height: 120px;
+    
+    margin: 10px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#navigator{
+   
+      position: fixed; 
+    top: 0px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    z-index: 1000;
+    border-radius:10px;
+    background-color: hsl(60, 3%, 35%);}
+.pro{
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 10%;
+}
+.problems{
+ width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 10%;
+}
+#animate-paragraph{
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block;
+      animation: sami  2s linear ;
+       animation-timeline:view();
+         animation-range:entry 0%;
+    }
+     #about{
+        backdrop-filter:blur(200px);
+        margin-top:150px;
+        padding:20px;
+        border-radius:20px;
+ background-image:url('abtme.jpeg');
+        animation: sami  2s linear;
+       animation-timeline:view();
+         animation-range:entry 0%;
+    }
+    #servicelist{
+    background-color:transparent;
+    color:white;
+    backdrop-filter:blur(200px);
+    padding:30px;
+     box-shadow:rgb(116, 113, 117) 5px 2px 10px 0px;
+    animation: sam  2s linear;
+    animation-timeline:view();
+     animation-range: entry 0%;
+}
+} */
+@media (max-width:1024px){
+.ski{
+    width: 120px;
+    margin:50px;
+    height: 120px;
+    
+    margin: 10px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#animate-paragraph{
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      animation: sami  2s linear ;
+       animation-timeline:view();
+         animation-range:entry 0%;
+    }
+#navigator{
+    width: 100%;
+    padding: 0px;
+    background-color: hsl(60, 3%, 35%);}
+.pro{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 10%;
+}
+.problems{
+ width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 10%;
+
+}
+.pro{
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 10%;
+}
+ #about{
+        backdrop-filter:blur(200px);
+        margin-top:200px;
+        padding:20px;
+        width:100%;
+        border-radius:20px;
+        background-image:url('abtme.jpeg');
+        animation: sami  2s linear;
+       animation-timeline:view();
+         animation-range:entry 0%;
+    }
+    #servicelist{
+    background-color:transparent;
+    color:white;
+    backdrop-filter:blur(200px);
+    padding:20px;
+    box-shadow:rgb(116, 113, 117) 5px 2px 10px 0px;
+}
+#conta{
+    border-radius:10px;
+    border: none;
+    width:100%;
+    backdrop-filter:blur(100px);
+}
+}
+  @keyframes sam{
+    from {
+            opacity:0;
+            transform: translateX(500px);
+        }
+        to {
+            opacity:1;
+            transform: translateX(0px);
+        }
+        }
+  
+   
+#additionalasid{
+    border-radius:20px;
+    margin-top:0px;
+    box-shadow:rgb(60, 58, 60) 2px 0px 10px 0px;
+    backdrop-filter:blur(200px);
+    animation: sami 5s linear;
+    padding:30px;
+    animation-timeline:view();
+    animation-range: entry 0%;
+}
+ @keyframes sami{
+        from {
+            opacity:0;
+
+            transform: scale(0);
+        }
+        to {
+            opacity:1;
+            transform: scale(1);
+        }
+        
+        
+    }
+
+#ski{
+    box-shadow: white 2px -3px 10px 0px;
+padding:10px; 
+margin-top:150px;
+border-radius:20px;
+border:none;
+transition:1s ease;
+backdrop-filter:blur(200px);
+ animation: skillsdivanimation 3s infinite alternate;
+
+}
+
+@keyframes skillsdivanimation{
+   0% {
+            background-color: rgb(25, 65, 25);
+    }
+    25%{
+       
+          background-color:rgb(69, 69, 17);
+    }
+    50%{
+       
+background-color:rgb(9, 9, 9);
+    }
+    75%{
+       
+            background-color:rgb(22, 77, 22);
+    }
+    100%{
+       
+           background-color:rgb(10, 10, 92) ;
+    }
+}
+
+#skilllist{
+transition:0.1s ease;
+padding:0px;
+animation:skillsanimation 2s ease;
+animation-timeline:view();
+ animation-range: entry 0%;
+
+}
+#skilllist:hover{
+  transform: scale(1.1); 
+  cursor:pointer;
+}
+
+@keyframes skillsanimation{
+    from{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+
+#myprojects{
+    cursor:pointer;
+    transition:all 0.1s;
+    animation: mypicanimation 3s infinite alternate;
+}
+#myprojects:hover{
+    cursor:pointer;
+    transform: translateY(-20px);
+    
+}
+#lee{
+     animation: mypicanimation 3s infinite alternate;
+    cursor:pointer;
+    background-color:white;
+    transition:all 0.1s;
+}
+#lee:hover{
+    transform:translateY(-20px);
+}
+.image-label {
+   color:rgb(88, 235, 208);
+}
+#division{
+    
+  font-size: 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#lin{
+     font-size: 30px;
+    width:40px;
+     height:40px;
+    cursor:pointer;
+    border-radius:50%;
+    background-color:white;
+    transition:all 0.1s;
+    margin:auto;
+    animation: mypicanimation 3s infinite alternate;
+}
