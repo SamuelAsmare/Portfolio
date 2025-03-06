@@ -601,10 +601,10 @@ animation-timeline:view();
     background-color:white;
     transition:all 0.1s;
     margin:auto;
-    animation: mypicanimation 3s infinite alternate;
 }
 #servicelist:hover{
     box-shadow:none;
     border:2px solid black;
     background-color:rgb(219, 245, 237);
 }
+
