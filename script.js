@@ -1,7 +1,7 @@
 
 // Wait for the whole page to load before hiding the preloader
 window.addEventListener("load", function() {
-    document.getElementById("intro").style.display = "none";
+    document.getElementById("preloader").style.display = "none";
 });
 
 toviewaboutme=()=>{
@@ -56,5 +56,5 @@ document.getElementById('services').scrollIntoView({
     i = (i + 1) % words.length;
   }
 
-  setInterval(changeWord, 5000);
+  setInterval(changeWord, 3000);
   
