@@ -4,6 +4,7 @@ body{
      overflow-x: hidden; 
      background-attachment:fixed;
      font-family:'Times New Roman', Times, serif;
+     transition:0.2s ease-in-out;
 }
 /* Preloader styles */
 #preloader {
@@ -49,10 +50,7 @@ body{
 
 
 header {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  display: none;
 }
 
 .navbar {
@@ -200,7 +198,7 @@ left:0px;
     border-radius: 10%;
     transition:all 2s ease;
     box-shadow:yellow 2px 3px 20px 2px;
-    animation: mypicanimation 3s infinite alternate;
+    animation: mypicanimation 2s infinite alternate;
 }
 #downloadcv1{
     color:white;
@@ -231,23 +229,23 @@ left:0px;
 
 @keyframes mypicanimation{
    0% {
-            box-shadow: green 2px 3px 0px 2px;
+            box-shadow: green 2px 3px 5px 2px;
     }
     25%{
        
-            box-shadow:yellow 2px 3px 40px 2px;
+            box-shadow:yellow 2px 3px 5px 2px;
     }
     50%{
        
-            box-shadow:red 2px 3px 40px 2px;
+            box-shadow:red 2px 3px 5px 2px;
     }
     75%{
        
-            box-shadow:green 2px 3px 40px 2px;
+            box-shadow:green 2px 3px 5px 2px;
     }
     100%{
        
-            box-shadow:blue 2px 3px 40px 2px;
+            box-shadow:blue 2px 3px 5px 2px;
     }
 }
 
@@ -287,6 +285,13 @@ left:0px;
     margin: 10px;
     border-radius: 10%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+header {
+    display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .pro{
     width: 150px;
@@ -606,5 +611,54 @@ animation-timeline:view();
     box-shadow:none;
     border:2px solid black;
     background-color:rgb(219, 245, 237);
+}
+
+
+#intro{
+    width:100%;
+    height:100vh;
+    display:flex;
+    position:absolute;
+    background-color:black;
+}
+.lds-facebook,
+.lds-facebook div {
+  box-sizing: border-box;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: currentColor;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0s;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
 }
 
